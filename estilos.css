@@ -1,0 +1,31 @@
+.contenedor{
+    display: grid;
+    grid-gap:20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 200px);
+
+
+    /*alinea elementos al raz de los elementos*/
+
+    /*
+    - start 
+    - auto 
+    - stretch 
+    - center 
+    - end
+    */
+
+    justify-items: center; 
+    align-items:  center;
+}
+
+
+
+.contenedor .item{
+    background-color: #999;
+    
+    /* alineacion de elemento*/
+    justify-self: stretch;
+    align-self: end;
+  
+}
